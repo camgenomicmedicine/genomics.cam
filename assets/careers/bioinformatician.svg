@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="82.5mm" viewBox="0 0 680 330" role="img" aria-labelledby="title description">
+  <title id="title">Analysing aligned DNA sequence reads</title>
+  <desc id="description">A bioinformatician examines short DNA reads aligned beneath a reference sequence on a monitor. One differing base is identified by its letter as well as its colour; it is not assigned a clinical meaning.</desc>
+  <rect width="680" height="330" fill="#FFFFFF"/>
+  <g id="chair" class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M126 161 Q117 187 126 221 L193 224 M137 226 L131 283 M184 226 L193 283"/>
+  </g>
+  <g id="analyst">
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M161 128 C142 135 134 151 135 174 L141 218 Q179 223 219 217 L216 166 C212 146 197 133 186 130 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M144 218 Q132 238 148 244 L194 246 L194 282 M181 220 L213 221 Q226 223 226 237 L225 281 M191 283 L207 284 M222 282 L239 284"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M166 110 L164 129 Q175 140 188 131 L187 114"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M158 73 C166 59 186 59 196 74 Q202 82 200 93 L207 103 Q207 107 199 107 L197 117 Q185 124 172 116 L161 101 Q153 99 154 93 Q155 88 160 92"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M160 92 C148 84 148 68 158 59 C170 49 192 56 197 69 Q184 77 171 71 L164 88 M162 59 Q170 66 189 64 M171 53 Q186 58 192 62 M160 97 Q155 92 158 99 M184 110 L196 112"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M177 85 L197 85 L197 96 L178 96 Z M177 88 L163 85 M197 88 L201 89 M185 89 L188 89"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M206 147 Q219 160 229 182 L263 210 L254 221 Q228 208 216 196 L192 169"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M263 210 L280 211 Q288 211 292 216 L300 219 Q304 223 298 225 L283 220 L269 223 L254 221"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M149 159 Q147 184 161 202 L207 219"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M207 214 L223 215 Q232 215 236 220 L240 226 L225 225 L207 224"/>
+  </g>
+  <g id="monitor">
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M300 66 Q432 64 559 67 L558 199 Q429 201 300 199 Z"/>
+    <path class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M308 189 L549 189"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M421 201 L419 219 L401 223 M438 201 L440 219 L458 223 M401 224 L458 224"/>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="320" y="94">Reference</text>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="320" y="132">Aligned</text>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="320" y="147">reads</text>
+    <!-- Each base is a separate text element at an explicit reference coordinate. -->
+    <g id="reference-bases" text-anchor="middle">
+      <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="400" y="94">A</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="418" y="94">C</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="436" y="94">T</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="454" y="94">G</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="472" y="94">A</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="490" y="94">C</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="508" y="94">T</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="526" y="94">G</text>
+    </g>
+    <path class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M394 104 L533 104"/>
+    <g id="sequence-reads" text-anchor="middle">
+      <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M393 113 L479 113 L479 134 L393 134 Z"/>
+      <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="400" y="128">A</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="418" y="128">C</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="436" y="128">T</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="454" y="128">G</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="472" y="128">A</text>
+      <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M429 135 L533 135 L533 156 L429 156 Z"/>
+      <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="436" y="150">T</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="454" y="150">G</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="472" y="150">A</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="490" y="150">C</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="508" y="150">T</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="526" y="150">G</text>
+      <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M411 157 L515 157 L515 178 L411 178 Z"/>
+      <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M447 157 L461 157 L461 178 L447 178 Z"/>
+      <text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="418" y="172">C</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="436" y="172">T</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="454" y="172">A</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="472" y="172">A</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="490" y="172">C</text><text text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="508" y="172">T</text>
+    </g>
+  </g>
+  <g id="keyboard-and-desk">
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M266 225 L383 225 L391 235 L260 235 Z"/>
+    <path class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M276 229 L375 229 M284 232 L357 232"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M243 241 Q408 239 575 242 M254 247 L563 247 M272 248 L272 284 M548 248 L548 284"/>
+  </g>
+</svg>

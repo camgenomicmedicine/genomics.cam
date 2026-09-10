@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="82.5mm" viewBox="0 0 680 330" role="img" aria-labelledby="title description">
+  <title id="title">Preparing samples in a genomic laboratory</title>
+  <desc id="description">A clinical scientist wearing a laboratory coat and gloves uses a micropipette above an open sample tube in a small rack.</desc>
+  <rect width="680" height="330" fill="#FFFFFF"/>
+  <g id="scientist">
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M205 128 C182 135 170 150 168 174 L163 244 L284 244 L283 169 C279 146 263 133 240 128 Z"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M207 128 L222 163 L240 128 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M204 130 L198 149 L213 164 L205 176 L220 190 L220 243 M242 130 L248 149 L232 164 L240 176 L224 190 M249 196 L271 196 L269 216 L249 216 Z"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M213 111 L211 131 Q224 141 237 129 L235 114"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M205 76 C213 62 233 63 243 76 Q249 85 247 96 L254 106 Q254 110 246 110 L245 119 Q232 128 218 118 L208 103 Q200 101 201 95 Q202 90 207 93"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M208 93 C193 81 196 64 209 58 C224 51 242 60 247 72 Q234 78 218 72 L214 91 M199 69 Q187 67 187 78 Q187 90 201 87 M214 59 Q224 65 239 65 M207 98 Q202 93 204 100 M236 115 L244 115"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M219 87 Q232 85 246 88 L244 98 L222 98 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M220 90 L210 88 M227 90 L230 90 M239 90 L242 90"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M271 146 C284 154 291 173 311 178 L349 165 L355 179 Q328 195 309 194 C291 193 277 185 266 172"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M348 165 L370 151 Q375 145 381 145 L390 148 Q397 151 396 156 L391 159 L381 155 L370 169 L355 179 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M375 154 L383 156 M370 161 L380 161"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M186 159 Q180 186 190 208 L233 224 L238 211 L205 196 L204 171"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M238 211 L257 214 Q264 214 268 219 L277 226 Q279 230 274 231 L258 224 M233 224 L252 232 Q260 236 268 233 M251 225 L263 230"/>
+  </g>
+  <g id="micropipette">
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M382 128 Q389 125 397 128 L398 165 Q396 173 390 173 Q382 171 381 165 Z"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M386 128 L386 117 L393 117 L393 127 M383 113 L397 113 L397 117 L383 117 Z"/>
+    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M384 172 L396 172 L393 191 L387 191 Z"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M387 191 L393 191 L391 211 L389 211 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M387 135 L392 135 M387 140 L392 140"/>
+    <!-- Fingers remain visibly in front of the pipette body. -->
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M381 149 Q384 147 389 149 L395 152 Q398 155 395 158 L389 157 L381 155 M380 156 Q386 155 390 158 L394 161 Q396 164 392 165 L381 162"/>
+  </g>
+  <g id="sample-tubes">
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M382 220 L398 220 L397 242 L390 251 L383 242 Z M398 221 L406 212 L414 215 L407 223 Z"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M384 237 L396 237 L395 242 L390 248 L385 242 Z"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M423 221 L439 221 L438 243 L431 252 L424 243 Z M421 217 L441 217 L441 221 L421 221 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M428 228 L434 228 M428 232 L434 232"/>
+    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M365 235 L455 235 L459 255 L362 255 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M369 243 L451 243 M371 256 L371 263 M450 256 L450 263"/>
+  </g>
+  <g id="bench" class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M144 265 Q333 263 503 266 M156 271 L491 271 M172 272 L172 293 M478 272 L478 293"/>
+  </g>
+  <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" id="activity-label" x="405" y="295" text-anchor="middle">Sample preparation</text>
+</svg>

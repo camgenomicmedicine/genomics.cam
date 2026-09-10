@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="82.5mm" viewBox="0 0 680 330" role="img" aria-labelledby="title description">
+  <title id="title">A conversation about genomic information</title>
+  <desc id="description">A genetic counsellor and another person sit at equal height across a small table, discussing a shared information sheet.</desc>
+  <rect width="680" height="330" fill="#FFFFFF"/>
+  <!-- Independently editable groups; all contours are original vector paths. -->
+  <g id="seating" class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M137 167 C133 190 135 226 146 240 L207 240 M151 241 L145 286 M198 241 L207 286"/>
+    <path d="M543 167 C547 190 545 226 534 240 L473 240 M529 241 L535 286 M482 241 L473 286"/>
+  </g>
+  <g id="counsellor">
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M172 132 C154 139 150 158 151 179 L157 216 Q183 223 219 215 L224 161 C221 145 208 135 195 132 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M170 213 C178 222 202 221 216 222 Q227 224 228 238 L226 279 M158 221 Q153 238 164 246 L203 248 L203 283 M199 284 L215 285 M222 280 Q233 279 240 284"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M177 108 L177 130 Q185 141 197 132 L195 116"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M168 74 C175 59 194 58 205 71 Q212 81 210 91 L217 102 Q217 105 209 106 L208 116 Q197 126 181 116 L173 104 Q166 101 166 94 Q166 89 172 91"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M171 92 C156 85 158 64 170 58 C181 52 202 55 207 66 Q197 75 178 75 L176 92 M168 67 C161 73 160 83 164 91 M178 58 Q190 65 204 64 M175 96 Q170 91 170 97 M199 88 L202 89 M200 110 Q204 111 208 109"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M211 145 C224 155 230 168 244 177 L271 180 L269 194 C248 194 235 191 225 184 L201 166"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M270 180 L286 178 Q291 177 294 180 L303 184 Q306 188 301 189 L289 187 M269 193 L289 194 Q296 194 299 190 M280 187 L291 190"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M165 160 Q165 185 175 201 L199 204"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M198 200 Q212 198 218 202 L220 207 L198 208"/>
+  </g>
+  <g id="person-in-conversation">
+    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M486 132 C470 136 460 146 457 164 L461 215 Q491 222 522 216 L529 178 C530 158 525 142 508 134 Z"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M464 215 Q454 223 453 237 L455 280 M521 220 Q527 238 515 246 L478 248 L478 283 M482 284 L466 285 M459 281 Q447 279 441 284"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M486 115 L485 132 Q496 142 507 132 L505 107"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M510 76 C501 62 482 63 474 77 Q470 86 472 94 L465 104 Q465 107 473 107 L474 117 Q484 125 498 117 L507 102 Q515 99 514 93 Q514 88 508 92"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M474 78 Q464 67 478 57 C488 49 507 57 513 66 Q523 76 514 92 M476 70 Q489 69 497 77 L505 92 M479 57 Q491 61 504 64 M508 97 Q513 91 511 98 M480 89 L477 90 M483 111 Q478 113 474 110"/>
+    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M472 145 C457 155 454 174 442 190 L421 199 L426 211 Q449 207 462 197 L484 171"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M422 199 L410 197 Q404 195 400 198 L391 203 Q388 207 394 207 L406 204 M425 210 L408 213 Q401 213 398 209 M416 206 L405 209"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M514 159 Q515 180 505 200 L481 204"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M482 200 Q469 198 463 202 L460 207 L482 208"/>
+  </g>
+  <g id="shared-information">
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M292 164 Q335 162 377 165 L386 210 Q341 214 296 209 Z"/>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="337" y="184" text-anchor="middle">Genomic</text>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="339" y="199" text-anchor="middle">information</text>
+  </g>
+  <g id="table" class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M234 216 Q342 215 447 217 L451 224 Q340 222 231 223 Z M255 224 L248 285 M426 224 L433 285"/>
+  </g>
+</svg>

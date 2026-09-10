@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="82.5mm" viewBox="0 0 680 330" role="img" aria-labelledby="title description">
+  <title id="title">Learning from a clinical case</title>
+  <desc id="description">A medical student takes notes from a clinical case while a tutor points to the case material. Both roles are labelled.</desc>
+  <rect width="680" height="330" fill="#FFFFFF"/>
+  <g id="student">
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M183 132 C164 138 156 152 157 175 L161 223 L247 223 L243 166 Q240 142 210 133 Z"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M188 113 L186 133 Q198 144 211 134 L210 118"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M180 78 C188 64 207 64 217 78 Q222 87 220 97 L227 108 Q227 111 219 111 L217 119 Q206 128 193 119 L182 103 Q174 101 175 95 Q176 91 181 94"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M181 94 Q170 89 169 78 C170 67 178 60 188 59 C200 51 220 63 221 77 Q209 78 198 73 Q190 84 181 84 Z M180 68 Q188 62 198 64 M197 57 Q205 68 216 69 M182 98 Q177 93 179 100 M207 94 L210 95 M208 114 L216 115"/>
+    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M235 149 Q247 163 254 184 L280 202 L271 214 Q248 204 237 193 L221 169"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M280 202 Q289 201 294 204 L300 210 Q301 214 297 215 L289 210 L281 214 L271 214"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M176 158 C173 179 179 196 191 205 L218 211"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M218 206 Q233 204 240 210 L242 216 L220 217"/>
+  </g>
+  <g id="tutor">
+    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M453 129 C437 135 429 149 429 171 L431 223 L517 223 L520 172 C520 150 509 136 486 130 Z"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M459 110 L456 130 Q470 144 483 131 L482 113"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M488 75 C482 62 462 61 451 73 Q444 81 446 93 L439 103 Q439 107 447 108 L449 118 Q461 125 474 117 L483 104 Q491 102 492 96 Q492 90 486 92"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M447 80 C440 71 447 60 459 56 C474 51 490 61 493 75 L486 92 Q480 83 478 71 Q466 76 447 80 M454 63 Q466 60 479 65 M486 96 Q490 94 488 100 M455 91 L452 92 M457 112 L450 112"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M447 89 L460 89 L460 99 L447 99 Z M440 92 L447 92 M461 92 L472 90"/>
+    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M445 148 Q430 160 415 169 L378 165 L374 178 Q400 186 422 181 L456 168"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M378 165 L362 159 Q356 158 353 160 L338 170 Q335 174 340 175 L356 169 L364 173 M374 178 L363 178 Q358 178 357 174"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M502 153 Q507 184 493 207 L466 213"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M467 208 Q456 205 449 210 L446 216 L467 218"/>
+  </g>
+  <g id="case-material">
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M296 140 Q323 137 350 141 L348 205 L297 205 Z"/>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="323" y="158" text-anchor="middle">Case</text>
+    <path class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M307 172 L339 172 M307 182 L337 183 M307 193 L329 193"/>
+    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M253 213 L310 211 L319 224 L259 225 Z"/>
+    <path class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M263 218 L286 217 M294 217 L306 217"/>
+    <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M293 209 L301 189 M296 210 L304 190 M293 209 L291 216 L296 210"/>
+    <path d="M301 189 L304 190" fill="none" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <g id="desk" class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M144 229 Q339 227 535 230 M159 234 L520 234 M172 235 L172 276 M506 235 L506 276"/>
+  </g>
+  <g id="role-labels">
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="205" y="295" text-anchor="middle">Medical student</text>
+    <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="473" y="295" text-anchor="middle">Clinical tutor</text>
+  </g>
+</svg>
