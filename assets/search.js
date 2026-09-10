@@ -33,43 +33,37 @@
     search(q);
   });
 
-  // Staff edit knowledgebase.html directly. Read its published text on each
-  // search-page visit, so a normal GitHub edit needs no separate index update.
-  async function refreshKnowledgebase() {
+  // Read the published teaching pages so a GitHub text edit also updates search.
+  const pages = window.GENOMICS_EDITABLE_PAGES || [{path:'knowledgebase.html', title:'Knowledgebase'}];
+  async function refreshPage(item) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
     try {
-      const response = await fetch('knowledgebase.html', {cache:'no-store', signal:controller.signal});
-      if (!response.ok) throw new Error('Knowledgebase unavailable');
+      const response = await fetch(item.path, {cache:'no-store', signal:controller.signal});
+      if (!response.ok) throw new Error('Page unavailable');
       const page = new DOMParser().parseFromString(await response.text(), 'text/html');
-      const article = page.getElementById('knowledgebase-content');
-      if (!article) throw new Error('Knowledgebase content missing');
-      // Ignore non-teaching content; never execute fetched markup or scripts.
+      const article = page.getElementById('teaching-content') || page.getElementById('knowledgebase-content');
+      if (!article) throw new Error('Teaching content missing');
+      // Fetched scripts are never executed and source markup is never rendered.
       article.querySelectorAll('script,style,[aria-hidden="true"]').forEach(node => node.remove());
       const fresh = Array.from(article.querySelectorAll('section')).map(section => {
         const heading = section.querySelector('h2[id]');
         if (!heading) return null;
-        return {
-          path: `knowledgebase.html#${encodeURIComponent(heading.id)}`,
-          title: `Knowledgebase · ${heading.textContent.trim()}`,
-          text: section.textContent.replace(/\s+/g,' ').trim()
-        };
+        return {path: item.path + '#' + encodeURIComponent(heading.id),
+          title: item.title + ' · ' + heading.textContent.trim(),
+          text: section.textContent.replace(/\s+/g,' ').trim()};
       }).filter(Boolean);
-      if (!fresh.length) throw new Error('Knowledgebase sections missing');
-      data = data.filter(item => !/^knowledgebase\.html(?:#|$)/.test(item.path)).concat(fresh);
-      search(input.value);
-    } catch (_) {
+      if (!fresh.length) throw new Error('Teaching sections missing');
+      data = data.filter(entry => entry.path.split('#')[0] !== item.path).concat(fresh);
+    } finally { clearTimeout(timeout); }
+  }
+  Promise.allSettled(pages.map(refreshPage)).then(outcomes => {
+    search(input.value);
+    if (outcomes.some(outcome => outcome.status === 'rejected')) {
       const note = document.createElement('p');
       note.className = 'source-note';
-      note.append('Search is using a saved knowledgebase snapshot. ');
-      const link = document.createElement('a');
-      link.href = 'knowledgebase.html';
-      link.textContent = 'Open the knowledgebase for its latest text.';
-      note.append(link);
+      note.append('Some teaching pages could not be refreshed. Search uses a saved snapshot for those pages; open a result to read its latest text.');
       status.after(note);
-    } finally {
-      clearTimeout(timeout);
     }
-  }
-  refreshKnowledgebase();
+  });
 })();

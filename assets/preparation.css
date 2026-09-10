@@ -1,0 +1,22 @@
+/* Shared presentation for directly editable preparation pages. */
+.learning-page section { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+.learning-page section:last-child { border-bottom: 0; }
+.learning-page .intro { font-size: 1.15rem; color: var(--muted); }
+.learning-page table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+.learning-page th, .learning-page td { border: 1px solid var(--line); padding: .85rem; text-align: left; vertical-align: top; }
+.learning-page thead { background: var(--wash); }
+.learning-page caption { text-align: left; font-weight: bold; margin-bottom: .8rem; }
+.learning-page .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+.learning-page .table-wrap:focus-visible { outline: 3px solid #ba7200; outline-offset: 3px; }
+.learning-page details { border: 1px solid var(--line); border-left: 3px solid var(--teal); padding: 1rem 1.2rem; margin: 1.3rem 0; }
+.learning-page details[open] summary { margin-bottom: 1rem; }
+.learning-page details p:last-child { margin-bottom: 0; }
+.learning-page summary { color: var(--blue); }
+.learning-page pre { overflow-x: auto; background: var(--wash); border: 1px solid var(--line); padding: 1.25rem; font-size: .9rem; line-height: 1.6; }
+.learning-page dt { color: var(--blue); font-weight: bold; margin-top: 1.5rem; }
+.learning-page dd { margin: .4rem 0 1.3rem; }
+.learning-page .callout, .learning-page .worked-example { background: var(--wash); border-left: 4px solid var(--teal); padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+.learning-page .source-note { font-size: .85rem; color: var(--muted); }
+.learning-page .next-step { border-top: 3px solid var(--teal); padding-top: 1.3rem; margin-top: 2rem; }
+@media (max-width: 550px) { .learning-page th, .learning-page td { padding: .6rem; } }
+@media print { .learning-page section { break-inside: auto; } .learning-page pre { white-space: pre-wrap; } }

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>An introduction to genomic data | Cambridge Genomic Medicine</title>
+  <meta name="description" content="Follow the path from a biological sample to reads, variants and interpretation.">
+  <meta name="theme-color" content="#082f43">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/preparation.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><header class="masthead"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">Gm</span><span class="brand-type">CAMBRIDGE<span>GENOMIC MEDICINE</span></span></a><nav class="main-nav" aria-label="Main navigation"><a href="start-here.html">Start here</a><a href="programmes.html">Your programme</a><a href="modules.html">Modules</a><a href="knowledgebase.html">Knowledgebase</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="search.html" class="search-link">Search</a></nav></div></header>
+<main id="main">
+<div class="container breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>An introduction to genomic data</span></div><div class="container page-heading"><p class="eyebrow">PREPARE AT YOUR PACE · MPHIL & MRES</p><h1>An introduction to genomic data</h1><p class="intro">Follow the path from a biological sample to reads, variants and interpretation.</p></div>
+  <div class="container page-layout">
+    <aside class="side-nav" aria-label="On this page">
+      <p>On this page</p>
+      <ul id="teaching-toc">
+        <li><a href="#workflow">From a sample to an interpretation</a></li>
+        <li><a href="#file-formats">Recognising the main file types</a></li>
+        <li><a href="#fastq-example">Read a tiny FASTQ example</a></li>
+        <li><a href="#alignment">Alignment needs a named reference</a></li>
+        <li><a href="#coverage">Depth and breadth answer different questions</a></li>
+        <li><a href="#variant-record">Read a synthetic variant record</a></li>
+        <li><a href="#interpretation">A variant call is the beginning of interpretation</a></li>
+      </ul>
+    </aside>
+<!-- START EDITABLE TEACHING PAGE
+     Edit paragraphs and lists directly in GitHub. Keep section ids for bookmarks.
+     Each section starts with an h2 heading. Copy an entire section to add a topic.
+     The contents list and search read this page automatically.
+     See EDITING-GUIDE.md for the GitHub GUI workflow.
+-->
+<article class="prose learning-page" id="teaching-content">
+<!-- EDIT: Introduction to genomic data. All records and counts are synthetic. -->
+<p>Genomic analysis turns measurements into evidence through several distinct steps. This introduction follows a typical workflow for identifying DNA variants using a reference genome. Allow about 35–45 minutes. You can complete every example on this page without installing software or supplying any data.</p>
+
+<!-- SECTION: WORKFLOW -->
+<section aria-labelledby="workflow">
+  <h2 id="workflow">From a sample to an interpretation</h2>
+  <p>The details depend on the question, sample and sequencing technology. Whole-genome, exome and targeted-panel experiments examine different portions of DNA; RNA sequencing asks different questions again. This outline is a useful starting point, rather than a universal recipe.</p>
+  <ol>
+    <li><strong>Sample and library:</strong> obtain suitable DNA and prepare it for sequencing, recording the sample identity and preparation method.</li>
+    <li><strong>Reads:</strong> the instrument measures signals; base calling converts these into sequences with estimates of uncertainty.</li>
+    <li><strong>Quality control:</strong> examine read quality, contamination, adapters and consistency between samples.</li>
+    <li><strong>Alignment:</strong> find plausible locations for reads within a reference assembly.</li>
+    <li><strong>Variant calling:</strong> evaluate the evidence for differences from that reference and, where appropriate, infer genotypes.</li>
+    <li><strong>Annotation:</strong> add information such as affected transcripts, predicted consequences and database observations.</li>
+    <li><strong>Interpretation:</strong> assess what the evidence means for the research question or clinical context.</li>
+  </ol>
+  <p>Quality assessment continues throughout the workflow. An error in sample identity cannot be corrected simply by applying a sophisticated variant caller. <a href="https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/short-read-sequencing/">NHS Genomics Education: short-read sequencing</a>.</p>
+</section>
+
+<!-- SECTION: FILE-FORMATS -->
+<section aria-labelledby="file-formats">
+  <h2 id="file-formats">Recognising the main file types</h2>
+  <div class="table-wrap" role="region" aria-label="Teaching table 1" tabindex="0">
+<table>
+    <caption>What common sequencing files represent</caption>
+    <thead><tr><th scope="col">Format</th><th scope="col">What it holds</th><th scope="col">Question it helps answer</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">FASTQ</th><td>Read identifiers, sequences and a quality character for each base.</td><td>What bases were called, and how uncertain were those calls?</td></tr>
+      <tr><th scope="row">SAM / BAM</th><td>Sequence records and alignment information; SAM is text and BAM is its binary equivalent. Unmapped reads can also be stored.</td><td>Where do reads align, and what supports that placement?</td></tr>
+      <tr><th scope="row">CRAM</th><td>Compressed sequence and alignment data, often using a reference sequence to improve compression.</td><td>How can alignment data be stored efficiently?</td></tr>
+      <tr><th scope="row">VCF</th><td>Variant records, alleles and associated information; it may also contain sample genotypes.</td><td>Which differences were reported, with what supporting information?</td></tr>
+    </tbody>
+  </table>
+</div>
+  <p>Binary alignment files need suitable software to inspect them. Index files let tools retrieve a region efficiently without reading the whole data file. Keep the matching reference available for reference-dependent CRAM files. The <a href="https://samtools.github.io/hts-specs/">GA4GH format specifications</a> define the alignment and variant formats; the <a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/">NCBI file-format guide</a> also explains FASTQ.</p>
+</section>
+
+<!-- SECTION: FASTQ-EXAMPLE -->
+<section aria-labelledby="fastq-example">
+  <h2 id="fastq-example">Read a tiny FASTQ example</h2>
+  <p>This invented record represents one four-base read. Sequencing reads are typically longer; the short example makes its structure visible.</p>
+  <pre><code>@teaching_read_01
+ACGT
++
+IIII</code></pre>
+  <p>The first line identifies the read, the second gives its sequence, the third is a separator and the fourth encodes base qualities. In Phred+33 encoding, <code>I</code> represents Q40. The scale is Q = −10 log<sub>10</sub>(estimated error probability): Q20 corresponds to 1%, Q30 to 0.1%, and Q40 to 0.01%. These are model-based estimates for individual base calls, not guarantees that a read or sample is correct. <a href="https://www.illumina.com/science/technology/next-generation-sequencing/plan-experiments/quality-scores.html">Illumina: quality-score definition</a>.</p>
+  <details>
+    <summary>Self-check: is a Q40 base necessarily aligned to the correct gene?</summary>
+    <p>No. The base may have been measured confidently but the read may come from a repeated sequence with several plausible locations. Base-call quality and mapping quality address different uncertainties.</p>
+  </details>
+</section>
+
+<!-- SECTION: ALIGNMENT -->
+<section aria-labelledby="alignment">
+  <h2 id="alignment">Alignment needs a named reference</h2>
+  <p>A reference assembly supplies sequences and coordinates against which reads and variants can be described. Record the assembly and version: a coordinate in GRCh37 is not automatically interchangeable with the same number in GRCh38. A reference allele is a comparison value, not a label meaning healthy or common.</p>
+  <p>Short reads can match several locations, particularly in repeated or duplicated regions. Mapping quality expresses confidence in placement; base quality concerns the individual sequence letters. SAM includes separate fields for these quantities. A mapping-quality value of 255 means unavailable, not exceptionally confident. <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">SAM specification</a>.</p>
+  <p>Quality checks may reveal adapter sequence, unexpectedly poor bases or contamination. A warning is a prompt to investigate in the context of the experiment, rather than a universal instruction to discard data. Record any filtering and why it was appropriate. <a href="https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/quality-control-2/">EMBL-EBI: sequencing quality control</a>.</p>
+</section>
+
+<!-- SECTION: COVERAGE -->
+<section aria-labelledby="coverage">
+  <h2 id="coverage">Depth and breadth answer different questions</h2>
+  <p><strong>Depth</strong> is how many reads cover a position, under the counting and filtering rules used. <strong>Breadth</strong> is how much of a specified region meets a coverage criterion. Always give the criterion and denominator: “95% of target bases at ≥20×” is more informative than “95% covered”. <a href="https://www.htslib.org/doc/samtools-coverage.html">Samtools: coverage measures</a>.</p>
+  <p>Imagine five equally weighted bases with depths <strong>0, 10, 20, 30 and 40</strong>. Mean depth is 100 ÷ 5 = <strong>20×</strong>. Four of five bases have at least one read, so breadth at ≥1× is <strong>80%</strong>. Only three meet ≥20×, so breadth at that threshold is <strong>60%</strong>. The mean conceals a completely uncovered base.</p>
+  <details>
+    <summary>Self-check: do 100 reads always provide 100 independent observations?</summary>
+    <p>No. Amplification can produce multiple reads derived from the same original molecule. Overlapping paired reads and other processing choices also affect counting. Depth summaries need their filtering and duplicate-handling rules. <a href="https://www.htslib.org/doc/samtools-depth.html">Samtools: depth-counting options</a>.</p>
+  </details>
+</section>
+
+<!-- SECTION: VARIANT-RECORD -->
+<section aria-labelledby="variant-record">
+  <h2 id="variant-record">Read a synthetic variant record</h2>
+  <p>This teaching table shows selected VCF fields for an invented reference sequence called <code>teaching_contig</code>. It is not a patient record or a complete VCF file.</p>
+  <div class="table-wrap" role="region" aria-label="Teaching table 2" tabindex="0">
+<table>
+    <caption>One fictional single-nucleotide substitution</caption>
+    <thead><tr><th scope="col">CHROM</th><th scope="col">POS</th><th scope="col">REF</th><th scope="col">ALT</th><th scope="col">GT</th><th scope="col">DP</th></tr></thead>
+    <tbody><tr><td>teaching_contig</td><td>101</td><td>A</td><td>G</td><td>0/1</td><td>20</td></tr></tbody>
+  </table>
+</div>
+  <p>At position 101, numbered from 1, the reference base is A and the alternate base is G. Here <code>0/1</code> describes an unphased diploid heterozygous genotype: one reference allele and one first alternate allele. The slash does not identify which parent contributed either allele. The example reports sample depth of 20; real files define their fields in the header. <a href="https://samtools.github.io/hts-specs/VCFv4.5.pdf">VCF specification</a>.</p>
+  <p>A caller combines evidence rather than merely counting letters. For example, 11 A-supporting and 9 G-supporting reads might support a heterozygous call, but confidence also depends on base quality, placement and possible artefacts. Those counts alone do not establish a reliable genotype.</p>
+</section>
+
+<!-- SECTION: INTERPRETATION -->
+<section aria-labelledby="interpretation">
+  <h2 id="interpretation">A variant call is the beginning of interpretation</h2>
+  <p>Annotation organises information; interpretation weighs it. A predicted change to a protein does not by itself demonstrate a disease mechanism. Relevance depends on the question, inheritance, phenotype, population evidence and functional evidence. Clinical interpretation requires an appropriate professional workflow. <a href="https://www.genomicseducation.hee.nhs.uk/education/core-concepts/what-is-bioinformatics/">NHS Genomics Education: deciphering genomic data</a>.</p>
+  <details>
+    <summary>Self-check: if a variant is absent from a VCF, is that position definitely reference?</summary>
+    <p>No. It may not have been assessed reliably, may have been filtered, or may fall outside the experiment's target or reporting scope. Check what the file represents and what evidence is available for that position.</p>
+  </details>
+  <p>Before interpreting a result, be able to name its sample type, assay, reference, processing steps and limitations. Those details connect the final claim to the evidence that produced it.</p>
+</section>
+
+  <p class="source-note">Updated September 2026.</p>
+  <p class="next-step"><a href="start-here.html">Your preparation route</a> · <a href="faq.html">Practical questions</a> · <a href="contact.html">Ask the programme team</a></p>
+</article>
+<!-- END EDITABLE TEACHING PAGE -->
+  </div>
+</main>
+<script src="assets/teaching.js"></script>
+<footer class="footer"><div class="container footer-inner"><div><p class="eyebrow">University of Cambridge</p><h2>Cambridge Genomic Medicine Programme</h2><p>Pre-course preparation for MPhil, MRes<br>and the wider Genomic Medicine Programme.</p></div><div><p class="eyebrow">Explore</p><ul><li><a href="modules.html">Module guides</a></li><li><a href="module-changes.html">Module name changes</a></li><li><a href="knowledgebase.html">Genetics knowledgebase</a></li></ul></div><div><p class="eyebrow">Useful information</p><ul><li><a href="faq.html#course-materials">Course materials</a></li><li><a href="contact.html">Contact the programme team</a></li><li><a href="faq.html">Practical questions</a></li></ul></div></div><div class="container footer-bottom">© Department of Genomic Medicine, University of Cambridge · 2026–27<br>Academic Laboratory of Medical Genetics, Box 238, Level 6, Addenbrooke’s Treatment Centre, Addenbrooke’s Hospital, Cambridge CB2 0QQ</div></footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Statistics refresher | Cambridge Genomic Medicine</title>
+  <meta name="description" content="Explore probability, variation, effects and uncertainty through small worked examples.">
+  <meta name="theme-color" content="#082f43">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/preparation.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><header class="masthead"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">Gm</span><span class="brand-type">CAMBRIDGE<span>GENOMIC MEDICINE</span></span></a><nav class="main-nav" aria-label="Main navigation"><a href="start-here.html">Start here</a><a href="programmes.html">Your programme</a><a href="modules.html">Modules</a><a href="knowledgebase.html">Knowledgebase</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="search.html" class="search-link">Search</a></nav></div></header>
+<main id="main">
+<div class="container breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Statistics refresher</span></div><div class="container page-heading"><p class="eyebrow">PREPARE AT YOUR PACE · MPHIL & MRES</p><h1>Statistics refresher</h1><p class="intro">Explore probability, variation, effects and uncertainty through small worked examples.</p></div>
+  <div class="container page-layout">
+    <aside class="side-nav" aria-label="On this page">
+      <p>On this page</p>
+      <ul id="teaching-toc">
+        <li><a href="#probability">Probability: begin with the denominator</a></li>
+        <li><a href="#distributions">Distributions describe patterns of variation</a></li>
+        <li><a href="#worked-summary">Worked example 1: what does “typical” mean?</a></li>
+        <li><a href="#uncertainty">Spread, precision and effect size</a></li>
+        <li><a href="#worked-effect">Worked example 2: relative and absolute differences</a></li>
+        <li><a href="#association">Correlation and causation</a></li>
+        <li><a href="#testing">P-values and multiple testing</a></li>
+      </ul>
+    </aside>
+<!-- START EDITABLE TEACHING PAGE
+     Edit paragraphs and lists directly in GitHub. Keep section ids for bookmarks.
+     Each section starts with an h2 heading. Copy an entire section to add a topic.
+     The contents list and search read this page automatically.
+     See EDITING-GUIDE.md for the GitHub GUI workflow.
+-->
+<article class="prose learning-page" id="teaching-content">
+<!-- EDIT: Statistics refresher. These are suggested preparation activities. -->
+<p>This refresher introduces the questions behind common statistical terms. Allow about 35–45 minutes, including the examples. You do not need statistical software. All numbers below are invented for teaching.</p>
+
+<!-- SECTION: PROBABILITY -->
+<section aria-labelledby="probability">
+  <h2 id="probability">Probability: begin with the denominator</h2>
+  <p>A probability describes how likely an event is under a specified model, on a scale from 0 to 1. A proportion describes what happened in an observed sample. If 12 of 100 samples pass a laboratory check, the observed proportion is 0.12; it is an estimate of an underlying probability, not a guarantee for the next batch.</p>
+  <p>Always ask: “Among which samples?” The probability of finding a variant among people with a condition differs from the probability of having that condition among people with the variant. Reversing the conditioning changes the question.</p>
+  <p>For independent events, multiply probabilities: two independent events each with probability 0.5 both occur with probability 0.25. Independence is an assumption to justify. Measurements from relatives, repeated measurements from one person and technical replicates may be related.</p>
+</section>
+
+<!-- SECTION: DISTRIBUTIONS -->
+<section aria-labelledby="distributions">
+  <h2 id="distributions">Distributions describe patterns of variation</h2>
+  <p>A distribution describes possible values and how frequently, or with what probability, they occur. A histogram displays the distribution of observed numerical values. Inspect its shape, spread, gaps and unusual observations before choosing a statistical method.</p>
+  <p>A normal distribution is symmetric and bell-shaped. Not all biological measurements follow it: counts are discrete, proportions are bounded, and concentrations may be strongly skewed. A binomial model describes the number of successes in a fixed number of independent trials with the same success probability. Its assumptions matter as much as its formula. <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm">NIST: binomial distribution</a>.</p>
+  <p>The mean adds the values and divides by their number. The median is the middle ordered value, averaging the middle pair when necessary. The median is less affected by extreme observations. Neither summary replaces looking at the data. <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm">NIST: measures of location</a>.</p>
+</section>
+
+<!-- SECTION: WORKED-SUMMARY -->
+<section aria-labelledby="worked-summary">
+  <h2 id="worked-summary">Worked example 1: what does “typical” mean?</h2>
+  <p>Five fictional DNA preparations have concentrations of <strong>8, 9, 10, 11 and 42 ng/µL</strong>. Their mean is (8 + 9 + 10 + 11 + 42) ÷ 5 = <strong>16 ng/µL</strong>. Their median is <strong>10 ng/µL</strong>. Four observations lie well below the mean because the fifth pulls it upwards.</p>
+  <p>The sample standard deviation (SD) measures spread around the sample mean, in the original units. Here it is √[(64 + 49 + 36 + 25 + 676) ÷ 4] ≈ <strong>14.6 ng/µL</strong>. The denominator is <em>n</em> − 1 for this sample SD. <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm">NIST: measures of scale</a>.</p>
+  <details>
+    <summary>Self-check: should you delete the value 42?</summary>
+    <p>No. Check the laboratory record, units and measurement process. It might be a genuine observation or a documented error. A value should not be removed merely because it changes the answer; explain any exclusion and consider whether conclusions depend on it.</p>
+  </details>
+</section>
+
+<!-- SECTION: UNCERTAINTY -->
+<section aria-labelledby="uncertainty">
+  <h2 id="uncertainty">Spread, precision and effect size</h2>
+  <p><strong>SD describes variation between observations.</strong> The <strong>standard error (SE)</strong> describes uncertainty in an estimated quantity across repeated samples. For a mean from independent, identically distributed observations with finite variance, the estimated SE is SD ÷ √<em>n</em>. Additional independent observations can improve precision without making individuals less variable.</p>
+  <p>A confidence interval expresses uncertainty using a specified procedure. Under the model assumptions, a method with 95% coverage would produce intervals containing the true parameter in about 95% of repeated samples. A particular frequentist interval is not a statement that the fixed parameter has a 95% probability of lying inside it. <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm">NIST: confidence limits</a>.</p>
+  <p>Report the estimated <strong>effect size</strong> too: for example, a mean difference, a risk difference or a ratio. Include its units, comparison group and uncertainty. A precise but tiny difference can have limited practical importance. A wide interval may leave several materially different conclusions plausible.</p>
+</section>
+
+<!-- SECTION: WORKED-EFFECT -->
+<section aria-labelledby="worked-effect">
+  <h2 id="worked-effect">Worked example 2: relative and absolute differences</h2>
+  <p>In a fictional laboratory comparison, 20 of 200 preparations fail with method A and 10 of 200 fail with method B.</p>
+  <div class="table-wrap" role="region" aria-label="Teaching table 1" tabindex="0">
+<table>
+    <caption>Two ways to describe the same observed difference</caption>
+    <thead><tr><th scope="col">Quantity</th><th scope="col">Calculation</th><th scope="col">Result</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Failure proportion with A</th><td>20 ÷ 200</td><td>10%</td></tr>
+      <tr><th scope="row">Failure proportion with B</th><td>10 ÷ 200</td><td>5%</td></tr>
+      <tr><th scope="row">Difference, B minus A</th><td>5% − 10%</td><td>−5 percentage points</td></tr>
+      <tr><th scope="row">Ratio, B divided by A</th><td>0.05 ÷ 0.10</td><td>0.5</td></tr>
+    </tbody>
+  </table>
+</div>
+  <p>“Half the failure proportion” and “five percentage points lower” describe the same observations. They do not establish that method B caused the improvement. We also need uncertainty estimates and information about how samples were assigned.</p>
+  <details>
+    <summary>Self-check: what if A was used on older, degraded samples?</summary>
+    <p>Sample condition could confound the comparison: it is related to method assignment and could affect failure. A fairer design might randomly allocate comparable samples to methods. More observations alone would not repair the systematic imbalance.</p>
+  </details>
+</section>
+
+<!-- SECTION: ASSOCIATION -->
+<section aria-labelledby="association">
+  <h2 id="association">Correlation and causation</h2>
+  <p>Correlation summarises association; it does not identify its cause. Plot the observations to check for clusters, outliers and curved relationships. A strong relationship can arise through a shared cause, selection or measurement artefacts. A correlation near zero can conceal a curved relationship. The study design and biological context help distinguish explanations. <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/scatterp.htm">NIST: scatter plots</a>.</p>
+</section>
+
+<!-- SECTION: TESTING -->
+<section aria-labelledby="testing">
+  <h2 id="testing">P-values and multiple testing</h2>
+  <p>A p-value asks how unusual the observed result, or a more extreme one according to the chosen test, would be under a specified null model and its assumptions. It does not give the probability that the null hypothesis is true, measure effect size or prove biological importance. A large p-value does not demonstrate equivalence. <a href="https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf">American Statistical Association: p-value principles</a>.</p>
+  <p>Testing many hypotheses creates many opportunities for false positives. If 1,000 null hypotheses are true and each valid test has a 5% false-positive probability, the expected number of false positives is 50. Independence is not required for this expectation. Bonferroni uses a threshold of α divided by the number of tests; at α = 0.05, that is 0.00005 for 1,000 tests. This controls the probability of at least one false positive across that defined family, subject to valid individual tests. <a href="https://www.itl.nist.gov/div898/handbook/prc/section4/prc473.htm">NIST: Bonferroni's method</a>.</p>
+  <p>False discovery rate (FDR) methods address a different aim: controlling the expected proportion of false positives among discoveries, counting this proportion as zero when there are none. Benjamini–Hochberg is a common approach under its dependence assumptions. FDR control does not assign a probability of being wrong to each individual finding. <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/p.adjust.html">R documentation: multiple-comparison methods</a>.</p>
+  <details>
+    <summary>Self-check: is p = 0.03 automatically persuasive in a genome-wide study?</summary>
+    <p>No. Ask how many hypotheses were examined, which analysis was planned, how multiple testing was handled, how large and precise the effect is, and whether independent evidence supports it.</p>
+  </details>
+</section>
+
+  <p class="source-note">Updated September 2026.</p>
+  <p class="next-step"><a href="start-here.html">Your preparation route</a> · <a href="faq.html">Practical questions</a> · <a href="contact.html">Ask the programme team</a></p>
+</article>
+<!-- END EDITABLE TEACHING PAGE -->
+  </div>
+</main>
+<script src="assets/teaching.js"></script>
+<footer class="footer"><div class="container footer-inner"><div><p class="eyebrow">University of Cambridge</p><h2>Cambridge Genomic Medicine Programme</h2><p>Pre-course preparation for MPhil, MRes<br>and the wider Genomic Medicine Programme.</p></div><div><p class="eyebrow">Explore</p><ul><li><a href="modules.html">Module guides</a></li><li><a href="module-changes.html">Module name changes</a></li><li><a href="knowledgebase.html">Genetics knowledgebase</a></li></ul></div><div><p class="eyebrow">Useful information</p><ul><li><a href="faq.html#course-materials">Course materials</a></li><li><a href="contact.html">Contact the programme team</a></li><li><a href="faq.html">Practical questions</a></li></ul></div></div><div class="container footer-bottom">© Department of Genomic Medicine, University of Cambridge · 2026–27<br>Academic Laboratory of Medical Genetics, Box 238, Level 6, Addenbrooke’s Treatment Centre, Addenbrooke’s Hospital, Cambridge CB2 0QQ</div></footer>
+</body>
+</html>
