@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="82.5mm" viewBox="0 0 680 330" role="img" aria-labelledby="title description">
   <title id="title">Planning a research study</title>
   <desc id="description">A PhD researcher works in an open notebook. Its two pages are headed Research question and Study design, linking a question to a planned investigation without depicting a result.</desc>
@@ -7,14 +7,15 @@
     <path d="M134 166 Q126 194 139 226 L199 228 M148 231 L141 283 M192 231 L202 283"/>
   </g>
   <g id="researcher">
-    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M178 132 C155 141 144 161 146 184 L153 221 Q188 227 225 220 L229 165 Q219 143 198 134 Z"/>
+    <path class="clothing" fill="#E8EFEB" stroke="#566F54" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M178 132 C155 141 144 161 146 184 L153 221 Q188 227 225 220 L229 165 Q219 143 198 134 Z"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M156 221 Q145 238 163 248 L204 249 L205 283 M186 224 L222 224 Q235 226 235 240 L235 282 M201 284 L218 285 M232 283 L249 285"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M181 111 L178 133 Q189 145 204 137 L202 116"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M172 77 C181 64 201 65 211 79 Q217 89 214 100 L221 110 Q221 114 213 114 L211 123 Q198 130 185 121 L175 105 Q167 103 168 97 Q169 92 174 96"/>
+    <path class="skin" fill="#D5A17F" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M181 111 L178 133 Q189 145 204 137 L202 116"/>
+    <path class="skin" fill="#D5A17F" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M172 77 C181 64 201 65 211 79 Q217 89 214 100 L221 110 Q221 114 213 114 L211 123 Q198 130 185 121 L175 105 Q167 103 168 97 Q169 92 174 96"/>
+    <path id="researcher-hair" class="hair" fill="#74645A" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M174 96 C159 88 159 70 173 60 C186 50 208 60 214 75 Q202 83 187 77 L178 93 Z M166 70 C155 72 150 89 155 108 Q157 118 169 121 L168 106 L174 96 Q162 88 166 70 Z"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M174 96 C159 88 159 70 173 60 C186 50 208 60 214 75 Q202 83 187 77 L178 93 M166 70 C155 72 150 89 155 108 Q157 118 169 121 M176 60 Q184 69 206 69 M171 98 Q167 95 170 103 M201 97 L204 98 M200 118 L210 119"/>
-    <path class="orange" fill="#FCF2E9" stroke="#BF6225" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M218 153 Q230 166 244 186 L277 196 L273 210 Q248 207 235 198 L207 177"/>
+    <path class="clothing" fill="#E8EFEB" stroke="#566F54" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M218 153 Q230 166 244 186 L277 196 L273 210 Q248 207 235 198 L207 177"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M160 166 Q154 188 172 207 L216 216"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M216 211 L231 212 Q242 212 247 218 L250 223 L232 222 L216 221"/>
+    <path class="skin" fill="#D5A17F" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M216 211 L231 212 Q242 212 247 218 L250 223 L232 222 L216 221"/>
   </g>
   <g id="research-notebook">
     <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M283 147 Q349 139 400 149 Q455 138 524 145 L538 232 Q465 226 402 237 Q349 228 272 235 Z"/>
@@ -24,7 +25,7 @@
     <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="345" y="178" text-anchor="middle">question</text>
     <text font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#303337" x="458" y="162" text-anchor="middle">Study design</text>
     <path class="quiet" fill="none" stroke="#B7BEC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M320 196 Q351 193 382 196 M305 207 Q345 204 378 206 M421 180 L502 180 M421 193 L507 193 M422 207 L488 207"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M277 196 L291 190 Q298 188 302 193 L307 198 Q309 202 305 204 L298 198 L291 203 L273 210"/>
+    <path class="skin" fill="#D5A17F" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M277 196 L291 190 Q298 188 302 193 L307 198 Q309 202 305 204 L298 198 L291 203 L273 210"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M302 193 L314 174 M305 195 L317 176 M302 193 L300 200 L305 195"/>
     <path d="M314 174 L317 176" fill="none" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round"/>
   </g>

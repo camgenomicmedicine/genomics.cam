@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="82.5mm" viewBox="0 0 680 330" role="img" aria-labelledby="title description">
   <title id="title">Analysing aligned DNA sequence reads</title>
   <desc id="description">A bioinformatician examines short DNA reads aligned beneath a reference sequence on a monitor. One differing base is identified by its letter as well as its colour; it is not assigned a clinical meaning.</desc>
@@ -7,16 +7,17 @@
     <path d="M126 161 Q117 187 126 221 L193 224 M137 226 L131 283 M184 226 L193 283"/>
   </g>
   <g id="analyst">
-    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M161 128 C142 135 134 151 135 174 L141 218 Q179 223 219 217 L216 166 C212 146 197 133 186 130 Z"/>
+    <path class="clothing" fill="#DCEBF2" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M161 128 C142 135 134 151 135 174 L141 218 Q179 223 219 217 L216 166 C212 146 197 133 186 130 Z"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M144 218 Q132 238 148 244 L194 246 L194 282 M181 220 L213 221 Q226 223 226 237 L225 281 M191 283 L207 284 M222 282 L239 284"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M166 110 L164 129 Q175 140 188 131 L187 114"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M158 73 C166 59 186 59 196 74 Q202 82 200 93 L207 103 Q207 107 199 107 L197 117 Q185 124 172 116 L161 101 Q153 99 154 93 Q155 88 160 92"/>
+    <path class="skin" fill="#AA7759" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M166 110 L164 129 Q175 140 188 131 L187 114"/>
+    <path class="skin" fill="#AA7759" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M158 73 C166 59 186 59 196 74 Q202 82 200 93 L207 103 Q207 107 199 107 L197 117 Q185 124 172 116 L161 101 Q153 99 154 93 Q155 88 160 92"/>
+    <path id="analyst-hair" class="hair" fill="#303337" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M160 92 C148 84 148 68 158 59 C170 49 192 56 197 69 Q184 77 171 71 L164 88 Z"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M160 92 C148 84 148 68 158 59 C170 49 192 56 197 69 Q184 77 171 71 L164 88 M162 59 Q170 66 189 64 M171 53 Q186 58 192 62 M160 97 Q155 92 158 99 M184 110 L196 112"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M177 85 L197 85 L197 96 L178 96 Z M177 88 L163 85 M197 88 L201 89 M185 89 L188 89"/>
-    <path class="blue" fill="#EDF5F8" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M206 147 Q219 160 229 182 L263 210 L254 221 Q228 208 216 196 L192 169"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M263 210 L280 211 Q288 211 292 216 L300 219 Q304 223 298 225 L283 220 L269 223 L254 221"/>
+    <path class="clothing" fill="#DCEBF2" stroke="#2879A3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M206 147 Q219 160 229 182 L263 210 L254 221 Q228 208 216 196 L192 169"/>
+    <path class="skin" fill="#AA7759" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M263 210 L280 211 Q288 211 292 216 L300 219 Q304 223 298 225 L283 220 L269 223 L254 221"/>
     <path class="line" fill="none" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M149 159 Q147 184 161 202 L207 219"/>
-    <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M207 214 L223 215 Q232 215 236 220 L240 226 L225 225 L207 224"/>
+    <path class="skin" fill="#AA7759" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M207 214 L223 215 Q232 215 236 220 L240 226 L225 225 L207 224"/>
   </g>
   <g id="monitor">
     <path class="paper" fill="#FFFFFF" stroke="#303337" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" d="M300 66 Q432 64 559 67 L558 199 Q429 201 300 199 Z"/>
